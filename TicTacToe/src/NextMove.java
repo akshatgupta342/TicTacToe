@@ -406,6 +406,150 @@ public class NextMove {
                 return board;
             }
         }
+        
+        if(!moved)
+        {
+            int cocc=0;
+            int emp=0;
+            int x=0,y=0;
+            if(board[0][0]=='0')
+                cocc+=1;
+            else if(board[0][0]=='n')
+            {   emp+=1;
+                x=0;
+                y=0;
+            }
+            if(board[0][1]=='0')
+                cocc+=1;
+            else if(board[0][1]=='n')
+            {
+                emp+=1;
+                x=0;
+                y=1;
+            }
+            if(board[1][0]=='0')
+                cocc+=1;
+            else if(board[1][0]=='n')
+            {
+                emp+=1;
+                x=1;
+                y=0;
+            }
+            if(cocc==2&&emp==1)
+            {
+                board[x][y]='0';
+                moved=true;
+                return board;
+            }
+        }
+        
+        if(!moved)
+        {
+            int cocc=0;
+            int emp=0;
+            int x=0,y=0;
+            if(board[0][2]=='0')
+                cocc+=1;
+            else if(board[0][2]=='n')
+            {   emp+=1;
+                x=0;
+                y=2;
+            }
+            if(board[0][1]=='0')
+                cocc+=1;
+            else if(board[0][1]=='n')
+            {
+                emp+=1;
+                x=0;
+                y=1;
+            }
+            if(board[1][2]=='0')
+                cocc+=1;
+            else if(board[1][2]=='n')
+            {
+                emp+=1;
+                x=1;
+                y=2;
+            }
+            if(cocc==2&&emp==1)
+            {
+                board[x][y]='0';
+                moved=true;
+                return board;
+            }
+        }
+        
+        if(!moved)
+        {
+            int cocc=0;
+            int emp=0;
+            int x=0,y=0;
+            if(board[2][2]=='0')
+                cocc+=1;
+            else if(board[2][2]=='n')
+            {   emp+=1;
+                x=2;
+                y=2;
+            }
+            if(board[1][2]=='0')
+                cocc+=1;
+            else if(board[1][2]=='n')
+            {
+                emp+=1;
+                x=1;
+                y=2;
+            }
+            if(board[2][1]=='0')
+                cocc+=1;
+            else if(board[2][1]=='n')
+            {
+                emp+=1;
+                x=2;
+                y=1;
+            }
+            if(cocc==2&&emp==1)
+            {
+                board[x][y]='0';
+                moved=true;
+                return board;
+            }
+        }
+        
+        if(!moved)
+        {
+            int cocc=0;
+            int emp=0;
+            int x=0,y=0;
+            if(board[2][0]=='0')
+                cocc+=1;
+            else if(board[2][0]=='n')
+            {   emp+=1;
+                x=2;
+                y=0;
+            }
+            if(board[2][1]=='0')
+                cocc+=1;
+            else if(board[2][1]=='n')
+            {
+                emp+=1;
+                x=2;
+                y=1;
+            }
+            if(board[1][0]=='0')
+                cocc+=1;
+            else if(board[1][0]=='n')
+            {
+                emp+=1;
+                x=1;
+                y=0;
+            }
+            if(cocc==2&&emp==1)
+            {
+                board[x][y]='0';
+                moved=true;
+                return board;
+            }
+        }
         return board;
     }
 
@@ -545,6 +689,150 @@ public class NextMove {
                 emp+=1;
                 x=2;
                 y=2;
+            }
+            if(cocc==2&&emp==1)
+            {
+                board[x][y]='0';
+                moved=true;
+                return board;
+            }
+        }
+        
+        if(!moved)
+        {
+            int cocc=0;
+            int emp=0;
+            int x=0,y=0;
+            if(board[0][0]=='x')
+                cocc+=1;
+            else if(board[0][0]=='n')
+            {   emp+=1;
+                x=0;
+                y=0;
+            }
+            if(board[0][1]=='x')
+                cocc+=1;
+            else if(board[0][1]=='n')
+            {
+                emp+=1;
+                x=0;
+                y=1;
+            }
+            if(board[1][0]=='x')
+                cocc+=1;
+            else if(board[1][0]=='n')
+            {
+                emp+=1;
+                x=1;
+                y=0;
+            }
+            if(cocc==2&&emp==1)
+            {
+                board[x][y]='x';
+                moved=true;
+                return board;
+            }
+        }
+        
+        if(!moved)
+        {
+            int cocc=0;
+            int emp=0;
+            int x=0,y=0;
+            if(board[0][2]=='x')
+                cocc+=1;
+            else if(board[0][2]=='n')
+            {   emp+=1;
+                x=0;
+                y=2;
+            }
+            if(board[0][1]=='x')
+                cocc+=1;
+            else if(board[0][1]=='n')
+            {
+                emp+=1;
+                x=0;
+                y=1;
+            }
+            if(board[1][2]=='x')
+                cocc+=1;
+            else if(board[1][2]=='n')
+            {
+                emp+=1;
+                x=1;
+                y=2;
+            }
+            if(cocc==2&&emp==1)
+            {
+                board[x][y]='0';
+                moved=true;
+                return board;
+            }
+        }
+        
+        if(!moved)
+        {
+            int cocc=0;
+            int emp=0;
+            int x=0,y=0;
+            if(board[2][2]=='x')
+                cocc+=1;
+            else if(board[2][2]=='n')
+            {   emp+=1;
+                x=2;
+                y=2;
+            }
+            if(board[1][2]=='x')
+                cocc+=1;
+            else if(board[1][2]=='n')
+            {
+                emp+=1;
+                x=1;
+                y=2;
+            }
+            if(board[2][1]=='x')
+                cocc+=1;
+            else if(board[2][1]=='n')
+            {
+                emp+=1;
+                x=2;
+                y=1;
+            }
+            if(cocc==2&&emp==1)
+            {
+                board[x][y]='0';
+                moved=true;
+                return board;
+            }
+        }
+        
+        if(!moved)
+        {
+            int cocc=0;
+            int emp=0;
+            int x=0,y=0;
+            if(board[2][0]=='x')
+                cocc+=1;
+            else if(board[2][0]=='n')
+            {   emp+=1;
+                x=2;
+                y=0;
+            }
+            if(board[2][1]=='x')
+                cocc+=1;
+            else if(board[2][1]=='n')
+            {
+                emp+=1;
+                x=2;
+                y=1;
+            }
+            if(board[1][0]=='x')
+                cocc+=1;
+            else if(board[1][0]=='n')
+            {
+                emp+=1;
+                x=1;
+                y=0;
             }
             if(cocc==2&&emp==1)
             {
